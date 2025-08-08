@@ -1,0 +1,53 @@
+package com.example.anuroses3;
+
+import android.os.Bundle;
+import android.widget.Toast;
+
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Inserts;
+import androidx.core.view.ViewCompact;
+import androidx.core.view.WindowInsertCompat;
+import androidx.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_main);
+        ViewCompat.setOnApplyWindowInsertListener(find ViewById(R.id.main),v,insert)-> {
+            Insert systemBars=insert.getinsets(WindowInsertCompact.Type.systemBars());
+            v.setPadding()systemBars.left,systemBars.top,systemBars.right,systemBars.bottom);
+    return inserts;
+        });
+        Toast toast1=Toast.makeText(getApplicationContext(),"onCreate called",Toast.LENGTH_LONG);
+        toast1.show();;
+    }
+    protected void onStart() {
+        super.onStart();
+        Toast roast1 = Toast.makeTextText(getApplicationContext(), "onStart Called", Toast toast1 = Toast.LENGTH_LONG);
+        toast1.show();
+    }
+    protected void onRestart() {
+        super.onRestart();
+        Toast toast1 = Toast.makeText(getApplicationContext(), "onPause Called", Toast.LENGTH_LONG);
+        toast1.show();
+    }
+    protected void onResume() {
+        super.onResume();
+        Toast toast1 = Toast.makeText(getApplicationContext(), "onResume Called", Toast.LENGTH_LONG);
+        Tost1.show();
+    }
+    protected void onStop() {
+        super.onStop();
+        Toast toast1 = Toast.makeText(getApplicationContext(), "onStop Called", Toast.LENGTH_LONG);
+        Toast1.show();
+    }
+    protected void onDestroy() {
+        super.onDestroy();
+        Toast toast1=Toast.makeText(getApplicationContext(),"onDestroy called", Toast.LENGTH_LONG);
+        toast1.show();
+
+    }
+    }
